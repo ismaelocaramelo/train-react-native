@@ -12,24 +12,30 @@ class Tabs extends Component {
   };
 
   selectTab = id => {
-    this.setState((({ selected }) => selected: id), () => {
-      console.log(this.state, 'state has changed');
-    });
+    this.setState(
+      ({ selected }) => {
+        return { selected: id };
+      },
+      () => {
+        console.log(this.state, 'state has changed');
+      }
+    );
   };
 
   renderTab(options) {
-    // define later
-    <TabBarIOS.Item
-      title={options.title}
-      selected={this.state.selected === options.id}
-      onPress={() => this.selectTab(options.id)}
-      icon={options.icon}
-    >
-      <View style={styles.container}>
-        <Image source={options.icon} style={styles.icon} />
-        <Text style={styles.title}>{options.title}</Text>
-      </View>
-    </TabBarIOS.Item>;
+    return (
+      <TabBarIOS.Item
+        title={options.title}
+        selected={this.state.selected === options.id}
+        onPress={() => this.selectTab(options.id)}
+        icon={options.icon}
+      >
+        <View style={styles.container}>
+          <Image source={options.icon} style={styles.icon} />
+          <Text style={styles.title}>{options.title}</Text>
+        </View>
+      </TabBarIOS.Item>
+    );
   }
 
   render() {
