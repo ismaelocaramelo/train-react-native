@@ -79,7 +79,7 @@ class Home extends PureComponent {
         <Text style={styles.sectionTitle}>{options.title.toUpperCase()}</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           {options.songs.map((song, index) => {
-            this.renderSong(options, song, index);
+            return this.renderSong(options, song, index);
           })}
         </ScrollView>
       </View>
