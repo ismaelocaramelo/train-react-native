@@ -137,6 +137,7 @@ const styles = StyleSheet.create({
     fontWeight: '200',
     fontSize: 12,
     flex: 1,
+    paddingBottom: 19,
     padding: 5,
     width: 100
   }
