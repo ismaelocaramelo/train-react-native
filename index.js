@@ -1,6 +1,7 @@
 import { AppRegistry } from 'react-native';
 import MainApp from './src/MainApp';
 import MainAppNav from './src/MainAppNav';
+import MainAppButton from './src/MainAppButton';
 
 import LoadingImage from './src/LoadingImage';
 import Toggle from './src/Toggle';
@@ -9,4 +10,4 @@ import Tabs from './src/Tabs';
 import Profile from './src/Profile';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppNav);
+AppRegistry.registerComponent('myApp', () => MainAppButton);
