@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "title": "Creating custom components",
+      "img": "01.jpg",
+      "content": "In this post we will learn how...",
+      "author": "Crysfel Villa"
+    },
+    {
+      "title": "Creating custom components",
+      "img": "02.jpg",
+      "content": "In this post we will learn how...",
+      "author": "ismy"
+    },
+    {
+      "title": "Creating custom components",
+      "img": "03.jpg",
+      "content": "In this post we will learn how...",
+      "author": "Felipe"
+    },
+    {
+      "title": "Creating custom components",
+      "img": "04.jpg",
+      "content": "In this post we will learn how...",
+      "author": "Carlos"
+    },
+    {
+      "title": "Creating custom components",
+      "img": "05.jpg",
+      "content": "In this post we will learn how...",
+      "author": "Josito"
+    },
+    {
+      "title": "Creating custom components",
+      "img": "06.jpg",
+      "content": "In this post we will learn how...",
+      "author": "Ruben"
+    }
+  ]
+}
