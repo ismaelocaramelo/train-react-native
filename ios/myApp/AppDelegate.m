@@ -18,6 +18,15 @@
 
   jsCodeLocation = [NSURL URLWithString:@"http://127.0.0.1:8081/index.bundle?platform=ios&dev=true"];
 
+  for (NSString* family in [UIFont familyNames])
+    {
+      NSLog(@"%@", family);
+      for (NSString* name in [UIFont fontNamesForFamilyName: family])
+      {
+        NSLog(@" %@", name);
+     }
+  }
+
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"myApp"
                                                initialProperties:nil
