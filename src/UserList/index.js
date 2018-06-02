@@ -11,24 +11,24 @@ import {
 import styles from './styles';
 
 class UserList extends PureComponent {
-  static capitalize(value) {
+  capitalize(value) {
     return value[0].toUpperCase() + value.substring(1);
   }
 
-  renderContact({ item }) {
+  renderContact = ({ item }) => {
     return (
       <TouchableOpacity style={styles.row}>
         <Image source={{ uri: `${item.picture.large}` }} style={styles.img} />
         <View style={styles.info}>
           <Text style={styles.name}>
-            {UserList.capitalize(item.name.first)}
-            {UserList.capitalize(item.name.last)}
+            {this.capitalize(item.name.first)}
+            {this.capitalize(item.name.last)}
           </Text>
           <Text style={styles.contact}>{item.phone}</Text>
         </View>
       </TouchableOpacity>
     );
-  }
+  };
 
   render() {
     return (

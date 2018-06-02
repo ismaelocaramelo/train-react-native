@@ -4,6 +4,7 @@ import Dimensions from './utils/Dimensions';
 import userData from './contacts.json';
 
 import UserList from './UserList';
+import UserDetail from './UserDetail';
 
 const styles = StyleSheet.create({
   content: {
@@ -19,7 +20,7 @@ class MainAppDeviceDetection extends PureComponent {
 
   renderDetail() {
     if (Dimensions.isTablet()) {
-      return <Text>Render on tables only!!!</Text>;
+      return <UserDetail contact={userData.results[0]} />;
     }
   }
 
