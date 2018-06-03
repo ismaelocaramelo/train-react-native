@@ -7,6 +7,7 @@ import MainAppIcon from './src/MainAppIcon';
 import MainAppDeviceDetection from './src/MainAppDeviceDetection';
 import MainAppDeviceOrientation from './src/MainAppDeviceOrientation';
 import MainAppBrowser from './src/MainAppBrowser';
+import MainAppHtmlView from './src/MainAppHtmlView';
 
 import LoadingImage from './src/LoadingImage';
 import Toggle from './src/Toggle';
@@ -16,4 +17,4 @@ import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppBrowser);
+AppRegistry.registerComponent('myApp', () => MainAppHtmlView);
