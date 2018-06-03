@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   btn: {
-    flex: 1,
     margin: 10,
     backgroundColor: '#c0392b',
     borderRadius: 3,
