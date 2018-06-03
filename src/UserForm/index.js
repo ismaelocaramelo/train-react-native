@@ -53,7 +53,7 @@ class UserForm extends PureComponent {
           keyboard: 'phone-pad'
         })}
         {this.renderTextField({
-          name: 'name',
+          name: 'email',
           label: 'Your email',
           keyboard: 'email-address'
         })}

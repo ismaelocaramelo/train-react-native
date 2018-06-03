@@ -1,18 +1,15 @@
 import React from 'react';
-import { StyleSheet, ScroolView, View, Text } from 'react-native';
-
+import { StyleSheet, ScrollView, View, Text } from 'react-native';
 import UserForm from './UserForm';
 
-const MainAppForm = () => {
-  return (
-    <View style={styles.main}>
-      <Text style={styles.toolbar}>Fitness App</Text>
-      <ScroolView style={styles.content}>
-        <UserForm />
-      </ScroolView>
-    </View>
-  );
-};
+const MainApp = () => (
+  <View style={styles.main}>
+    <Text style={styles.toolbar}>Fitness App</Text>
+    <ScrollView style={styles.content}>
+      <UserForm />
+    </ScrollView>
+  </View>
+);
 
 const styles = StyleSheet.create({
   main: {
@@ -30,4 +27,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default MainAppForm;
+export default MainApp;
