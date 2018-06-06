@@ -10,6 +10,7 @@ import MainAppBrowser from './src/MainAppBrowser';
 import MainAppHtmlView from './src/MainAppHtmlView';
 import MainAppForm from './src/MainAppForm';
 import MainAppAnimation from './src/MainAppAnimation';
+import MainAppMultiAnimation from './src/MainAppMultiAnimation';
 
 import LoadingImage from './src/LoadingImage';
 import Toggle from './src/Toggle';
@@ -19,4 +20,4 @@ import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppAnimation);
+AppRegistry.registerComponent('myApp', () => MainAppMultiAnimation);
