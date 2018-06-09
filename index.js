@@ -13,6 +13,7 @@ import MainAppAnimation from './src/MainAppAnimation';
 import MainAppMultiAnimation from './src/MainAppMultiAnimation';
 import MainAppNotification from './src/MainAppNotification';
 import MainAppPanel from './src/MainAppPanel';
+import MainAppButtonLoading from './src/MainAppButtonLoading';
 
 import LoadingImage from './src/LoadingImage';
 import Toggle from './src/Toggle';
@@ -22,4 +23,4 @@ import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppPanel);
+AppRegistry.registerComponent('myApp', () => MainAppButtonLoading);
