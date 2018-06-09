@@ -65,7 +65,9 @@ class Notification extends PureComponent {
       layout: { height }
     } = event.nativeEvent;
 
-    this.setState({ height });
+    if (this.state.height === -1000) {
+      this.setState({ height });
+    }
   };
 
   render() {
@@ -76,6 +78,7 @@ class Notification extends PureComponent {
       outputRange: [-height, 0]
     });
 
+    console.log('render');
     return (
       <Animated.View
         onLayout={this.onLayoutChange}
