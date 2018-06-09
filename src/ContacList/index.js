@@ -15,7 +15,8 @@ const data = [
 
 class ContactList extends PureComponent {
   state = {
-    swiping: false
+    swiping: false,
+    dataSource: data
   };
 
   onToggleSwipe = () => {
@@ -29,6 +30,10 @@ class ContactList extends PureComponent {
 
     // Danger !!!
     data.splice(index, 1);
+
+    this.setState(({ dataSource }) => {
+      dataSource: data;
+    });
   };
 
   renderContact = ({ item }) => (
@@ -43,7 +48,7 @@ class ContactList extends PureComponent {
   render() {
     return (
       <FlatList
-        data={data}
+        data={this.state.dataSource}
         style={this.props.style}
         renderItem={this.renderContact}
         keyExtractor={item => item.id}
