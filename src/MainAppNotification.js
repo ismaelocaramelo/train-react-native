@@ -38,6 +38,7 @@ class MainApp extends PureComponent {
           </TouchableOpacity>
           <Text>Duis aute irure</Text>
         </View>
+        {notify}
       </View>
     );
   }
