@@ -49,7 +49,6 @@ class ContactList extends PureComponent {
     return (
       <FlatList
         data={this.state.dataSource}
-        style={this.props.style}
         renderItem={this.renderContact}
         keyExtractor={item => item.id}
       />
