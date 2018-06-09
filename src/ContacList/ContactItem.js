@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
   Animated,
@@ -12,7 +12,7 @@ import {
 
 const { func, object } = PropTypes;
 
-class ContactItem extends PureComponent {
+class ContactItem extends Component {
   static propTypes = {
     contact: object,
     onPress: func,

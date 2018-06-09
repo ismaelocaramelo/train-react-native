@@ -2,6 +2,13 @@ import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import ContactList from './ContacList';
 
+const MainApp = () => (
+  <View style={styles.main}>
+    <Text style={styles.toolbar}>Contacts</Text>
+    <ContactList />
+  </View>
+);
+
 const styles = StyleSheet.create({
   main: {
     flex: 1
@@ -14,12 +21,5 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }
 });
-
-const MainApp = () => (
-  <View style={styles.main}>
-    <Text style={styles.toolbar}>Contacts</Text>
-    <ContactList />
-  </View>
-);
 
 export default MainApp;
