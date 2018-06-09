@@ -44,10 +44,12 @@ class ContactList extends PureComponent {
     return (
       <FlatList
         data={data}
-        style={styles.main}
+        style={this.props.style}
         renderItem={this.renderContact}
         keyExtractor={item => item.id}
       />
     );
   }
 }
+
+export default ContactList;

@@ -14,6 +14,7 @@ import MainAppMultiAnimation from './src/MainAppMultiAnimation';
 import MainAppNotification from './src/MainAppNotification';
 import MainAppPanel from './src/MainAppPanel';
 import MainAppButtonLoading from './src/MainAppButtonLoading';
+import MainAppListRemoveItems from './src/MainAppListRemoveItems';
 
 import LoadingImage from './src/LoadingImage';
 import Toggle from './src/Toggle';
@@ -23,4 +24,4 @@ import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppButtonLoading);
+AppRegistry.registerComponent('myApp', () => MainAppListRemoveItems);
