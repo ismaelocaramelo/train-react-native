@@ -48,6 +48,11 @@ class Icon extends PureComponent {
     }).start();
   }
 
+  onPressIcon = () => {
+    const { onPress, name } = this.props;
+    onPress(name);
+  };
+
   render() {
     const { name, index } = this.props;
     const left = index * 50;
