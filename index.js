@@ -1,4 +1,4 @@
-import { AppRegistry } from 'react-native';
+import {AppRegistry} from 'react-native';
 import MainApp from './src/MainApp';
 import MainAppNav from './src/MainAppNav';
 import MainAppButton from './src/MainAppButton';
@@ -16,6 +16,7 @@ import MainAppPanel from './src/MainAppPanel';
 import MainAppButtonLoading from './src/MainAppButtonLoading';
 import MainAppListRemoveItems from './src/MainAppListRemoveItems';
 import MainAppReactions from './src/MainAppReactions';
+import MainAppSavingLocally from './src/MainAppSavingLocally';
 
 import LoadingImage from './src/LoadingImage';
 import Toggle from './src/Toggle';
@@ -25,4 +26,4 @@ import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppReactions);
+AppRegistry.registerComponent('myApp', () => MainAppSavingLocally);
