@@ -18,6 +18,7 @@ import MainAppListRemoveItems from './src/MainAppListRemoveItems';
 import MainAppReactions from './src/MainAppReactions';
 import MainAppSavingLocally from './src/MainAppSavingLocally';
 import MainAppRemoteAPI from './src/MainAppRemoteAPI';
+import MainAppSendingData from './src/MainAppSendingData';
 
 import LoadingImage from './src/LoadingImage';
 import Toggle from './src/Toggle';
@@ -27,4 +28,4 @@ import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppRemoteAPI);
+AppRegistry.registerComponent('myApp', () => MainAppSendingData);
