@@ -76,12 +76,16 @@ class MainApp extends PureComponent {
             onChangeText={this.onTitleChange}
             value={title}
             placeholder="Title"
+            autoCapitalize="none"
+            autoCorrect={false}
           />
           <TextInput
             style={styles.input}
             onChangeText={this.onUrlChange}
             value={url}
             placeholder="URL (http://example.com)"
+            autoCapitalize="none"
+            autoCorrect={false}
           />
           <TouchableOpacity onPress={this.onSave} style={styles.btn}>
             <Text>Save!</Text>
@@ -132,7 +136,7 @@ const styles = StyleSheet.create({
   preview: {
     flex: 1,
     backgroundColor: '#bdc3c7',
-    height: 500,
+    height: 400,
   },
 });
 
