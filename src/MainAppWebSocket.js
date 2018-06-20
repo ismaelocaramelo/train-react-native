@@ -51,6 +51,7 @@ class MainApp extends PureComponent {
         },
       ],
     });
+    this.ws.send(text);
   };
 
   onChangeText = text => {
