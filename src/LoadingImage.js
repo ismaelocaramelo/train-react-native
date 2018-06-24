@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, Image, View, ImageBackground } from 'react-native';
+import {StyleSheet, Image, View, ImageBackground} from 'react-native';
 
 const styles = StyleSheet.create({
   fullscreen: {
-    flex: 1
+    flex: 1,
   },
   container: {
     position: 'absolute',
@@ -17,14 +17,14 @@ const styles = StyleSheet.create({
     right: 10,
     left: 10,
     borderWidth: 1,
-    borderColor: '#303030'
+    borderColor: '#303030',
   },
   icon: {
     tintColor: '#fff',
     height: 16,
     width: 16,
     marginLeft: 5,
-    marginRight: 5
+    marginRight: 5,
   },
   progress: {
     backgroundColor: '#000',
@@ -32,23 +32,24 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 14,
     margin: 10,
-    marginTop: 2
+    marginTop: 2,
   },
   progressBar: {
     backgroundColor: '#bf161c',
     borderRadius: 5,
     height: 10,
     margin: 2,
-    width: 80
-  }
+    width: 80,
+  },
 });
 
 const playIcon = require('./images/play.png');
 const volumenIcon = require('./images/sound.png');
 const hdIcon = require('./images/hd-sign.png');
 const fullScreenIcon = require('./images/full-screen.png');
+
 const remoteImage = {
-  uri: 'https://s3.amazonaws.com/crysfel/public/book/new-york.jpg'
+  uri: 'https://i.imgur.com/aZEKKfJ.jpg',
 };
 
 const LoadingImage = () => {

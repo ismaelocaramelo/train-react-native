@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React, {PureComponent} from 'react';
+import {StyleSheet, View, Text} from 'react-native';
 import Dimensions from './utils/Dimensions';
 import userData from './contacts.json';
 
@@ -9,8 +9,8 @@ import UserDetail from './UserDetail';
 const styles = StyleSheet.create({
   content: {
     flex: 1,
-    flexDirection: 'row'
-  }
+    flexDirection: 'row',
+  },
 });
 
 class MainAppDeviceDetection extends PureComponent {

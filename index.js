@@ -29,4 +29,4 @@ import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppWebSocket);
+AppRegistry.registerComponent('myApp', () => MainAppButtonLoading);
