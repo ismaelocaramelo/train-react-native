@@ -8,17 +8,18 @@ import {
 } from 'react-native';
 
 class MainApp extends PureComponent {
-  state = {
-    history: [],
-  };
-
-  componentWillMount() {
-    this.ws = new WebSocket('ws://localhost:3001');
+  constructor(props) {
+    super(props);
+    this.state = {
+      history: [],
+    };
+    this.ws = new WebSocket('http://localhost:3001');
     this.ws.onopen = this.onOpenConnection;
     this.ws.onmessage = this.onMessageReceived;
     this.ws.onerror = this.onError;
     this.ws.onclose = this.onClose;
   }
+
   onOpenConnection = () => {
     console.log('Open!');
   };
