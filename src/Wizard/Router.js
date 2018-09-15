@@ -49,7 +49,7 @@ class Router extends PureComponent {
   handleNavigationChange = (prevState, currentState, action) => {
     const {isTransitioning, routes} = currentState;
     if (isTransitioning) {
-      const {routeName} = routes.reverse()[0];
+      const {routeName} = routes.slice(-1)[0];
       this.props.handleNavChange(routeName);
     }
   };
