@@ -28,5 +28,7 @@ import Tabs from './src/Tabs';
 import Profile from './src/Profile';
 import CustomFontIos from './src/CustomFontIos';
 
+import Wizard from './src/Wizard';
+
 //AppRegistry.registerComponent('myApp', () => MainApp);
-AppRegistry.registerComponent('myApp', () => MainAppButtonLoading);
+AppRegistry.registerComponent('myApp', () => Wizard);
