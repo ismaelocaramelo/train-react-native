@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { StyleSheet, View, FlatList, Image, Text } from 'react-native';
+import React, {PureComponent} from 'react';
+import {StyleSheet, View, FlatList, Image, Text} from 'react-native';
 import data from './sales.json';
 
 const basketIcon = require('./images/basket.png');
@@ -7,7 +7,7 @@ const basketIcon = require('./images/basket.png');
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
   },
   title: {
     backgroundColor: '#0f1b29',
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     padding: 10,
     paddingTop: 40,
-    textAlign: 'center'
+    textAlign: 'center',
   },
   row: {
     flexDirection: 'row',
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     marginLeft: 10,
     paddingTop: 20,
-    paddingBottom: 20
+    paddingBottom: 20,
   },
   iconContainer: {
     alignItems: 'center',
@@ -34,46 +34,47 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     justifyContent: 'center',
     height: 50,
-    width: 50
+    width: 50,
   },
   icon: {
     tintColor: '#fff',
     height: 22,
-    width: 22
+    width: 22,
   },
   info: {
     flex: 1,
     paddingRight: 25,
-    paddingLeft: 25
+    paddingLeft: 25,
+    alignItems: 'center',
   },
   items: {
     fontWeight: 'bold',
     fontSize: 16,
-    marginBottom: 5
+    marginBottom: 10,
   },
   address: {
     color: '#ccc',
-    fontSize: 14
+    fontSize: 14,
   },
   total: {
-    width: 80
+    width: 80,
   },
   date: {
     fontSize: 12,
-    marginBottom: 5
+    marginBottom: 5,
   },
   price: {
     color: '#1cad61',
     fontSize: 25,
-    fontWeight: 'bold'
-  }
+    fontWeight: 'bold',
+  },
 });
 
 class List extends PureComponent {
   state = {
-    data
+    data,
   };
-  renderListItem({ item }) {
+  renderListItem({item}) {
     return (
       <View style={styles.row}>
         <View style={styles.iconContainer}>
